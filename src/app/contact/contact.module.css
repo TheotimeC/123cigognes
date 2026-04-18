@@ -1,0 +1,158 @@
+.heroBanner {
+  position: relative;
+  padding: calc(100px + var(--space-3xl)) 0 var(--space-3xl);
+  overflow: hidden;
+}
+
+.heroBannerBg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--prune) 0%, var(--rose-framboise) 50%, var(--vert-sauge) 100%);
+  opacity: 0.08;
+}
+
+.heroBannerContent {
+  position: relative;
+  text-align: center;
+}
+
+.heroBannerContent h1 {
+  font-size: var(--fs-h1);
+  margin-bottom: var(--space-md);
+}
+
+.heroBannerContent p {
+  font-size: var(--fs-body-lg);
+  color: var(--texte-leger);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ── Welcome ── */
+.welcomeText {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto var(--space-3xl);
+}
+
+.welcomeQuote {
+  font-family: var(--font-handwritten);
+  font-size: 1.3rem;
+  color: var(--rose-framboise);
+  margin-bottom: var(--space-lg);
+}
+
+.welcomeText > p:last-child {
+  color: var(--texte-leger);
+  font-size: var(--fs-body-lg);
+}
+
+/* ── Cards ── */
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: var(--space-xl);
+}
+
+.contactCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-2xl) var(--space-xl);
+  background: var(--blanc);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  text-decoration: none;
+  color: var(--texte);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.contactCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--rose-framboise);
+  color: var(--texte);
+}
+
+.cardIcon {
+  font-size: 2.2rem;
+  margin-bottom: var(--space-lg);
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--rose-poudre-50);
+  border-radius: var(--radius-full);
+}
+
+.contactCard:hover .cardIcon {
+  background: var(--rose-poudre);
+}
+
+.contactCard h3 {
+  font-size: var(--fs-h4);
+  margin-bottom: var(--space-sm);
+}
+
+.cardValue {
+  font-weight: var(--fw-semibold);
+  color: var(--rose-framboise);
+  word-break: break-all;
+  margin-bottom: var(--space-xs);
+}
+
+.cardHint {
+  font-size: var(--fs-small);
+  color: var(--texte-leger);
+}
+
+/* ── Two Col ── */
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+}
+
+.followBlock,
+.supportBlock {
+  padding: var(--space-2xl);
+  background: var(--blanc);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.followBlock h2,
+.supportBlock h2 {
+  margin-bottom: var(--space-md);
+}
+
+.followBlock p,
+.supportBlock p {
+  color: var(--texte-leger);
+  margin-bottom: var(--space-xl);
+}
+
+/* ── Reassurance ── */
+.reassurance {
+  font-size: var(--fs-body-lg);
+  color: var(--texte-leger);
+  padding: var(--space-xl);
+  background: var(--mauve-clair-50);
+  border-radius: var(--radius-lg);
+  line-height: var(--lh-relaxed);
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+}

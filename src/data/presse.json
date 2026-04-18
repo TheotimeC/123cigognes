@@ -1,0 +1,38 @@
+[
+  {
+    "id": "dna-juin-2024",
+    "titre": "Trois survivantes du cancer au défi d'un trek solidaire",
+    "media": "Dernières Nouvelles d'Alsace (DNA)",
+    "date": "2024-06-08",
+    "visuel": "/img/article DNA 08062024.jpg",
+    "resume": "Le portrait des trois fondatrices — Emmanuelle Colinet, Sophie Buchi-Dossing et Anne Schmitt — unies par la résilience face au cancer et le projet d'un trek solidaire au Portugal.",
+    "lien": null
+  },
+  {
+    "id": "maxi-flash-nov-2024",
+    "titre": "Le trek en rose",
+    "media": "Maxi Flash",
+    "date": "2024-11-04",
+    "visuel": "/img/Article Maxi Flash 04112024.JPG",
+    "resume": "Retour sur le trek solidaire au Portugal réalisé par les trois amies. Du 22 au 28 octobre, elles ont parcouru près de 20 km par jour entre Lisbonne et Faro, portées par la solidarité et l'espoir.",
+    "lien": null
+  },
+  {
+    "id": "dna-nov-2024",
+    "titre": "Près de 120 exposants attendus à Drus'Noël",
+    "media": "Dernières Nouvelles d'Alsace (DNA)",
+    "date": "2024-11-28",
+    "visuel": "/img/Article DNA 28112024.jpg",
+    "resume": "L'association 123 Cigognes, présente au marché de Noël de Drusenheim, avec les trois fondatrices Anne Schmitt, Sophie Buchi-Dossing et Emmanuelle Colinet.",
+    "lien": null
+  },
+  {
+    "id": "dna-dec-2024",
+    "titre": "De retour d'un trek solidaire au Portugal, l'association 1 2 3 cigognes témoigne",
+    "media": "Dernières Nouvelles d'Alsace (DNA)",
+    "date": "2024-12-03",
+    "visuel": "/img/Article DNA 03122024.jpeg",
+    "resume": "Emmanuelle Colinet et Sophie Buchi-Dossing témoignent de leur trek solidaire au marché de Noël de Drusenheim. L'association annonce ses projets de balades dans les Vosges avec des ânes pour 2025.",
+    "lien": null
+  }
+]

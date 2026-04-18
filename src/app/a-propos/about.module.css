@@ -1,0 +1,408 @@
+.heroBanner {
+  position: relative;
+  padding: calc(100px + var(--space-3xl)) 0 var(--space-3xl);
+  overflow: hidden;
+}
+
+.heroBannerBg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--prune) 0%, var(--rose-framboise) 50%, var(--vert-sauge) 100%);
+  opacity: 0.08;
+}
+
+.heroBannerContent {
+  position: relative;
+  text-align: center;
+}
+
+.heroBannerContent h1 {
+  font-size: var(--fs-h1);
+  margin-bottom: var(--space-md);
+}
+
+.heroBannerContent p {
+  font-size: var(--fs-body-lg);
+  color: var(--texte-leger);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ── Story ── */
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.storyLabel {
+  font-family: var(--font-handwritten);
+  color: var(--vert-sauge);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-sm);
+}
+
+.storyText h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.storyText p {
+  color: var(--texte-leger);
+  font-size: var(--fs-body-lg);
+  margin-bottom: var(--space-md);
+}
+
+.storyText em {
+  color: var(--rose-framboise);
+  font-style: italic;
+}
+
+.storyImageStack {
+  position: relative;
+}
+
+.storyImage1 {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.storyImage1 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.storyFloatQuote {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  background: var(--blanc);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  max-width: 280px;
+  animation: float 7s ease-in-out infinite;
+}
+
+.storyFloatQuote p {
+  font-family: var(--font-handwritten);
+  font-size: 1.1rem;
+  color: var(--prune);
+  margin-bottom: var(--space-xs);
+}
+
+.storyFloatQuote span {
+  font-size: var(--fs-small);
+  color: var(--texte-leger);
+}
+
+/* ── Trek ── */
+.trekGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.trekImage {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.trekImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.trekText h2 {
+  margin-bottom: var(--space-lg);
+}
+
+.trekText p {
+  color: var(--texte-leger);
+  font-size: var(--fs-body-lg);
+}
+
+.blockquote {
+  position: relative;
+  padding: var(--space-xl) var(--space-xl) var(--space-xl) var(--space-2xl);
+  margin: var(--space-xl) 0;
+  background: var(--blanc);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--rose-framboise);
+  font-family: var(--font-handwritten);
+  font-size: 1.05rem;
+  color: var(--prune);
+  line-height: var(--lh-relaxed);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Mission ── */
+.missionBlock {
+  text-align: center;
+}
+
+.missionBlock h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.missionLead {
+  font-size: var(--fs-body-lg) !important;
+  color: var(--prune) !important;
+  font-weight: var(--fw-medium);
+  margin-bottom: var(--space-xl) !important;
+}
+
+.missionBlock p {
+  color: var(--texte-leger);
+  font-size: var(--fs-body-lg);
+  text-align: left;
+}
+
+/* ── Valeurs ── */
+.valeursGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: var(--space-lg);
+}
+
+.valeurCard {
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  background: var(--blanc);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease-out);
+  border: 1px solid var(--border-light);
+}
+
+.valeurCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.valeurIcon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.valeurLabel {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-xs);
+  color: var(--prune);
+}
+
+.valeurDesc {
+  font-size: var(--fs-small);
+  color: var(--texte-leger);
+}
+
+/* ── Actions ── */
+.actionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: var(--space-xl);
+}
+
+.actionCard {
+  padding: var(--space-2xl);
+  background: var(--blanc);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.actionCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.actionIcon {
+  font-size: 2.4rem;
+  margin-bottom: var(--space-lg);
+}
+
+.actionCard h3 {
+  font-size: var(--fs-h4);
+  margin-bottom: var(--space-md);
+}
+
+.actionCard p {
+  color: var(--texte-leger);
+}
+
+/* ── Partner ── */
+.partnerShowcase {
+  display: flex;
+  justify-content: center;
+}
+
+.partnerCard {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-3xl);
+  background: var(--blanc);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.partnerImg {
+  margin: 0 auto var(--space-lg);
+  object-fit: contain;
+}
+
+.partnerCard h3 {
+  font-size: var(--fs-h4);
+  margin-bottom: var(--space-sm);
+}
+
+.partnerCard p {
+  color: var(--texte-leger);
+}
+
+/* ── Prix Banner ── */
+.prixBanner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+  background: var(--blanc);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: var(--space-3xl);
+  border: 1px solid var(--border-light);
+}
+
+.prixBannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prixBannerText {
+  padding: var(--space-2xl);
+}
+
+.prixBannerText h3 {
+  font-size: var(--fs-h3);
+  margin-bottom: var(--space-md);
+}
+
+.prixBannerText p {
+  color: var(--texte-leger);
+}
+
+/* ── Presse List ── */
+.presseList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.presseItem {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-xl);
+  background: var(--blanc);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.presseItem:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-2px);
+}
+
+.presseItemImage {
+  overflow: hidden;
+}
+
+.presseItemImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.presseItem:hover .presseItemImage img {
+  transform: scale(1.04);
+}
+
+.presseItemText {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.presseMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.presseSource {
+  font-weight: var(--fw-semibold);
+  color: var(--rose-framboise);
+  font-size: var(--fs-small);
+}
+
+.presseDate {
+  font-size: var(--fs-small);
+  color: var(--texte-leger);
+}
+
+.presseItemText h3 {
+  font-size: var(--fs-h4);
+  margin-bottom: var(--space-sm);
+  line-height: var(--lh-snug);
+}
+
+.presseItemText p {
+  color: var(--texte-leger);
+  font-size: var(--fs-body);
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .storyGrid,
+  .trekGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .storyFloatQuote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: calc(-1 * var(--space-xl));
+    margin-left: var(--space-lg);
+  }
+
+  .prixBanner {
+    grid-template-columns: 1fr;
+  }
+
+  .presseItem {
+    grid-template-columns: 1fr;
+  }
+
+  .presseItemImage img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .valeursGrid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
