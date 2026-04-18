@@ -312,19 +312,14 @@ export default function Home() {
             </div>
             <div className={`${styles.videoWrap} reveal`}>
               <div className={styles.videoPlayer}>
-                <div className={styles.videoPlaceholder}>
-                  <div className={styles.videoPlayBtn}>
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  <p style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--fs-h3)' }}>
-                    Vidéo bientôt disponible
-                  </p>
-                  <p style={{ fontSize: 'var(--fs-small)', opacity: 0.7 }}>
-                    La vidéo de la remise de prix sera intégrée prochainement.
-                  </p>
-                </div>
+                <video 
+                  src="/img/VIDEO  1.2.3.CIGOGNES  - FLOUTAGE.mp4" 
+                  controls 
+                  preload="metadata"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                >
+                  Votre navigateur ne prend pas en charge la lecture de vidéos.
+                </video>
               </div>
               <p className={styles.videoCaption}>
                 Cérémonie de remise du Prix de l&apos;Engagement Associatif 2025
