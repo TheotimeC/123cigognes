@@ -77,13 +77,17 @@ export default function AgendaPage() {
               <div className={styles.introIcon}>🌿</div>
               <h2>Balade Zen &amp; Oxygène</h2>
               <p>
-                Nos balades s&apos;adressent aux personnes touchées par le cancer et à leurs proches.
+                Nos balades s&apos;adressent aux personnes touchées ou ayant été touchées par le cancer.
                 Le rythme est doux, adapté à chacun. Accompagnés d&apos;ânes ou de lamas,
                 nous marchons en pleine nature pour retrouver du souffle et du bien-être.
               </p>
+              <p style={{ margin: 'var(--space-md) 0' }}>
+                ✨ Afin de vous offrir une véritable journée de détente, <strong>le déplacement, les boissons, les collations ainsi que le repas sont intégralement pris en charge par l&apos;association.</strong>
+              </p>
               <p className={styles.introNote}>
                 <strong>Pour s&apos;inscrire ou en savoir plus</strong>, contactez-nous par email
-                ou par téléphone. Les places sont limitées pour garantir un moment de qualité.
+                ou par téléphone. Les places sont limitées pour garantir un moment de qualité.<br />
+                <em>À noter : Pour participer aux marches, il est nécessaire d&apos;être adhérent(e) de l&apos;association (adhésion possible via <a href="https://www.helloasso.com/associations/1-2-3-cigognes/adhesions/adhesion-a-1-2-3-cigognes-2026" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>HelloAsso</a>).</em>
               </p>
             </div>
           </div>
